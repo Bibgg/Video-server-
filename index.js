@@ -52,6 +52,6 @@ app.post('/api/run-command', (req, res) => {
     });
 });
 
-app.listen(PORT, () => {
+const PORT = process env PORT || 3000;{
     console.log(`Server is running on http://localhost:${PORT}`);
 });
